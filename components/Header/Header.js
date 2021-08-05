@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "../../public/assets/eCademy.png";
 import HeaderItems from "./HeaderItems";
-import CandidatureButton from "../Register/CandidatureButton";
+import CandidacyButton from "../candidacy/CandidacyButton";
 import SearchInput from "./SearchInput";
 import TopBar from "./TopBar";
 
@@ -16,7 +16,7 @@ export default function Header() {
         </div>
         <SearchInput />
         <HeaderItems />
-        <CandidatureButton />
+        <CandidacyButton />
       </div>
     </div>
   );
