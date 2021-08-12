@@ -1,18 +1,25 @@
-import { MdLocationOn, MdSchool, MdPhone } from "react-icons/md";
+import {
+  MdLocationOn,
+  MdSchool,
+  MdPhone,
+} from "react-icons/md";
+import Link from "next/link";
 const Items = [
   {
     id: 0,
     name: "Ecole",
+    to: "/About",
     Icon: <MdSchool className="w-5 h-5 mr-3" />,
   },
   {
     id: 1,
     name: "Contact",
+    to: "/Contact",
     Icon: <MdLocationOn className="w-5 h-5 mr-3" />,
   },
   {
     id: 2,
-    name: "05 34 56 63",
+    name: "(+212) 05 22 27 99 01",
     Icon: <MdPhone className="w-5 h-5 mr-3" />,
   },
 ];
@@ -30,7 +37,9 @@ export default function TopBar() {
             }
           >
             {item.Icon}
-            <span>{item.name}</span>
+            <Link href={`${item.to}`}>
+              <span>{item.name}</span>
+            </Link>
           </div>
         );
       })}

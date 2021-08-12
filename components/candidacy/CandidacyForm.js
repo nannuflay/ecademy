@@ -48,7 +48,7 @@ export default function CandidacyForm() {
             class="input"
           />
         </div>
-        <div class="flex items-center pl-3 mt-4 font-Noto text-gray-600 text-xs">
+        <div class="flex items-center pl-3 mt-4 font-Noto text-gray-700 text-xs mx-10">
           <input
             type="checkbox"
             id="checkbox-email"
