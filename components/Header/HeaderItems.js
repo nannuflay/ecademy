@@ -38,16 +38,15 @@ const HeaderItems = () => {
   ];
 
   return (
-    <div className="flex items-center">
+    <div className='flex items-center'>
       {Items.map((item) => {
         return (
           <div
             key={item.id}
-            className="text-gray-800 flex items-center transition-colors ease-in duration-300
-               tracking-wide  mx-3  hover:text-green-500   cursor-pointer font-Noto"
-          >
+            className='text-gray-800 flex items-center transition-colors ease-in duration-300
+               tracking-wide  mx-3  hover:text-primary   cursor-pointer font-Noto'>
             <a>{item.name}</a>
-            {item.submenu && <MdKeyboardArrowDown className="w-6 h-6 mt-1" />}
+            {item.submenu && <MdKeyboardArrowDown className='w-6 h-6 mt-1' />}
           </div>
         );
       })}

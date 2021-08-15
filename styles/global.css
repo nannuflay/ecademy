@@ -4,20 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.input {
-  @apply -ml-10 w-full pl-10 py-4 border-b rounded-sm text-gray-700 focus:outline-none focus:border-green-500;
-}
-
-.checkbox {
-  @apply form-checkbox checked:bg-green-600 appearance-none h-4 w-4 text-gray-700  rounded mr-4  focus:border-white;
-}
-
-.select {
-  @apply -ml-10 w-full pl-10 py-2 border-b rounded-sm text-gray-700 focus:outline-none focus:border-green-500 bg-white;
+.inputCandidacy {
+  @apply -ml-10 w-full pl-10 py-4 border-b rounded-sm text-gray-700 focus:outline-none focus:border-secondary;
 }
 
 .flexBox {
-  @apply flex items-center mt-3 mx-4 font-Noto text-xs;
+  @apply flex items-center mt-3 mx-4 font-Noto text-sm;
 }
 
 .ContactBg {
@@ -25,11 +17,11 @@
 }
 
 .inputContact {
-  @apply font-Noto focus:outline-none mt-2  appearance-none text-xs border border-gray-200 focus:border-gray-200 py-3 px-4 rounded-full;
+  @apply font-Noto focus:outline-none mt-2  appearance-none  border border-gray-200 focus:border-gray-200 py-3 px-4 rounded-full;
 }
 
 .textAreaContact {
-  @apply font-Noto focus:outline-none  mt-2 appearance-none text-xs border border-gray-200 focus:border-gray-200 py-3 h-36 px-4 rounded-md;
+  @apply font-Noto focus:outline-none  mt-2 appearance-none  border border-gray-200 focus:border-gray-200 py-3 h-36 px-4 rounded-md;
 }
 
 .socialBg {

@@ -667,6 +667,11 @@ cssnano-simple@2.0.0:
   dependencies:
     cssnano-preset-simple "^2.0.0"
 
+daisyui@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-1.11.1.tgz#6d0fdeb6f1e2015c98b7ddc36eb29a176e252c0b"
+  integrity sha512-re9r/yJ3SvoQ6MnteakFgLnie63l9hdg+X4/4/+g3Py9F1TL3yPGQrpszBYz6sM123IJsCMxQZdTPFlu85xP1Q==
+
 data-uri-to-buffer@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-3.0.1.tgz#594b8973938c5bc2c33046535785341abc4f3636"

@@ -9,16 +9,9 @@ export default function Header() {
   return (
     <div>
       <TopBar />
-      <div className="flex flex-1 py-4 px-10 items-center justify-between align-middle ">
+      <div className='flex flex-1 py-4 px-10 items-center justify-between align-middle '>
         {" "}
-        <div>
-          <Image
-            width={120}
-            height={70}
-            src={Logo}
-            alt="logo image"
-          />
-        </div>
+        <div className=' font-bold font-Noto text-2xl'>Logo ici</div>
         <SearchInput />
         <HeaderItems />
         <CandidacyButton />

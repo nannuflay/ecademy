@@ -6,16 +6,14 @@ export default function Candidacy() {
   return (
     <div>
       <Header />{" "}
-      <div className="  bg-gray-100 h-44 pl-28 flex items-center">
-        <div className="flex flex-col font-Noto ">
-          <h1 className="text-4xl font-bold text-gray-800">
-            Candidature
-          </h1>
-          <div className=" border-t-2 w-16 border-green-500 rounded-md mt-4 " />
+      <div className='  bg-gray-100 h-44 pl-28 flex items-center'>
+        <div className='flex flex-col font-Noto '>
+          <h1 className='text-4xl font-bold text-gray-800'>Candidature</h1>
+          <div className=' border-t-2 w-16 border-primary rounded-md mt-4 ' />
         </div>
       </div>
-      <div className="flex w-full">
-        <CandidacyContent class="bg-green-500" />
+      <div className='flex w-full'>
+        <CandidacyContent class='bg-green-500' />
         <CandidacyForm />
       </div>
     </div>

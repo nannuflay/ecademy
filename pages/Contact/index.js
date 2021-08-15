@@ -16,43 +16,32 @@ export default function Contact() {
   return (
     <div>
       <Header />
-      <div className="w-5/6 mx-auto">
-        <div className="flex flex-col font-Noto  pt-20  ">
-          <h1 className="text-4xl text-gray-800">
-            Contact:
-          </h1>
-          <div className=" border-t-4 w-16 border-green-500 rounded-md mt-4 " />
+      <div className='w-5/6 mx-auto'>
+        <div className='flex flex-col font-Noto  pt-20  '>
+          <h1 className='text-2xl text-gray-800'>CONTACTEZ-NOUS PAR EMAIL</h1>
+          <p className=' mt-2 text-sm text-gray-500'>
+            Veuillez nous laisser un message et il nous fera plaisir de vous
+            répondre dans le plus bref délai.
+          </p>
         </div>
         <div
-          className="flex justify-around mt-6
-       ContactBg bg-gradient-to-bl from-green-500 p-4 h-[600px]"
-        >
-          <div className="w-2/6 ">
+          className='flex justify-between mt-6
+           h-[600px]'>
+          <Image src={VectorMail} width={600} height={500} className='' />
+          <div className='w-2/6 '>
             <ContactForm />
           </div>
-          <Image
-            src={VectorMail}
-            width={600}
-            height={500}
-            className=""
-          />
         </div>
-        <div className="flex flex-col font-Noto">
-          <h1 className="text-4xl  text-gray-800">
-            Plus d'information:
-          </h1>
-          <div className=" border-t-4 w-16 border-green-500 rounded-md mt-4 " />
-        </div>
-        <div className="flex justify-between mx-auto my-6">
-          <div className="w-2/6">
+        <div className='flex justify-between mx-auto my-6'>
+          <div className='w-2/6'>
             <ContactInfos />
           </div>
-          <div className="w-4/6 h-[270px]">
+          <div className='w-4/6 h-[270px]'>
             <DynamicMap />
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
