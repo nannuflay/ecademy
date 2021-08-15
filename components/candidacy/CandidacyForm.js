@@ -1,10 +1,4 @@
-import {
-  AiOutlineMail,
-  AiOutlinePhone,
-  AiOutlineUser,
-  AiOutlineLock,
-  AiOutlineEye,
-} from "react-icons/ai";
+import { AiOutlineMail, AiOutlinePhone, AiOutlineUser } from "react-icons/ai";
 import { VscPerson } from "react-icons/vsc";
 import { IoSchoolOutline } from "react-icons/io5";
 import ValidationForm from "./ValidationForm";
@@ -53,21 +47,6 @@ export default function CandidacyForm() {
         </div>
 
         <div class='flexBox'>
-          <AiOutlineLock className='z-10 w-5 h-5 mx-3 text-gray-800' />
-          <input
-            type='password'
-            placeholder='MOT DE PASSE'
-            class='inputCandidacy'
-          />
-          <AiOutlineEye className='z-10 w-4 h-4 mx-3 text-gray-800 -ml-6' />
-        </div>
-        <div class='flex items-center leading-5 pl-10 w-5/6 mt-4 font-Noto text-gray-600 text-xs'>
-          <label>
-            8 caractères minimum et au moins 3 des 4 types : majuscules,
-            minuscules, chiffres, autres.
-          </label>
-        </div>
-        <div class='flexBox'>
           <IoSchoolOutline className='z-10 w-5 h-5 mx-3 text-gray-800' />
           <select className='select'>
             <option selected disabled>
@@ -105,8 +84,7 @@ export default function CandidacyForm() {
             traitement informatique ayant pour finalité la gestion de votre
             candidature (et, si vous l'avez accepté, l'envoi d'e-mails et/ou de
             SMS d'information) par la société{" "}
-            <a className='hover:underline text-primary cursor-pointer'>FCAT</a>{" "}
-            . Pour plus d'informations apres la validation de votre candidature,
+            <a className='hover:underline text-primary cursor-pointer'>FCAT.</a>{" "}
           </label>
         </div>
         <ValidationForm />

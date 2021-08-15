@@ -8,25 +8,14 @@ export default function CandidacyContent() {
           Pour déposer votre candidature, il vous suffit de remplir le
           formulaire ci-contre.
         </p>
-        <p className='mt-6'>
-          Vous pourrez ensuite, à l’aide de votre adresse e-mail et de votre mot
-          de passe, accéder à votre espace sécurisé afin de compléter en toute
-          tranquillité votre dossier.
-        </p>
+
+        <div className='flex justify-center items-center mt-4'>
+          <Image src={student} />
+        </div>
         <p className='mt-6'>
           Une fois votre dossier de candidature validé, un référent vous
           contactera pour le passage des tests et de l’entretien d’admission.
         </p>
-        <div className='flex justify-center items-center mt-10'>
-          <Image src={student} />
-        </div>
-        <div className=' font-Noto mt-5 text-gray-800'>
-          Si vous disposez déjà d’un compte,
-          <a className=' text-primary'>
-            {" "}
-            cliquez-ici pour compléter votre dossier de candidature existant.
-          </a>
-        </div>
       </div>
     </div>
   );
