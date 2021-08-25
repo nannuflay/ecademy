@@ -2,7 +2,7 @@ import { MdSearch } from "react-icons/md";
 
 export default function SearchInput() {
   return (
-    <div class='w-1/4 relative mr-4'>
+    <div class='w-1/4 relative mr-4 mx-10'>
       <input
         className='bg-gray-100 appearance-none border-2 placeholder-gray-500
            border-gray-100 rounded w-full py-3 pl-4 pr-10 text-gray-700 leading-tight

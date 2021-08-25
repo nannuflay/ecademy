@@ -12,8 +12,8 @@ export default function Candidacy() {
           <div className=' border-t-2 w-16 border-primary rounded-md mt-4 ' />
         </div>
       </div> */}
-      <div className='flex w-full mt-10'>
-        <CandidacyContent class='bg-green-500' />
+      <div className='md:flex w-full mt-10'>
+        <CandidacyContent />
         <CandidacyForm />
       </div>
     </div>

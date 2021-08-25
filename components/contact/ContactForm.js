@@ -17,11 +17,7 @@ export default function CoqntactForm() {
         </div>
         <input type='text' placeholder='Nom' className=' inputContact' />
         <input type='text' placeholder='Prenom' className=' inputContact' />
-        <input
-          type='text'
-          placeholder='Numero Telephone'
-          className=' inputContact'
-        />
+
         <input type='text' placeholder=' E-mail' className=' inputContact' />
         <textarea
           type='text'
