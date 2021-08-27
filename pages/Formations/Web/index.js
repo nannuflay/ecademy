@@ -1,5 +1,5 @@
-import FormationsList from "../../components/Formations/FormationsList";
-import Header from "../../components/Header/Header";
+import FormationsList from "../../../components/Formations/FormationsList";
+import Header from "../../../components/Header/Header";
 function Developement() {
   return (
     <div>

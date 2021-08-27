@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Header from "../../components/Header/Header";
-import { Formations } from "../api/FormationsData";
+import Header from "../../../components/Header/Header";
+import { Formations } from "../../api/FormationsData";
 
 export const getStaticProps = async ({ params }) => {
   const formations = Formations.filter((p) => p.id.toString() === params.id);

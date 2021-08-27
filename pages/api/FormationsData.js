@@ -4,10 +4,12 @@ import img3 from "../../public/assets/Web/2.png";
 import img4 from "../../public/assets/Web/4.jpg";
 import img5 from "../../public/assets/Web/5.jpg";
 import img6 from "../../public/assets/Web/6.jpg";
+import img7 from "../../public/assets/Web/7.png";
+import img8 from "../../public/assets/Web/8.jpg";
 
 export const Formations = [
   {
-    id: 0,
+    id: "React - The Complete Guide (incl Hooks, React Router, Redux",
     status: true,
     category: "Web",
     name: "React - The Complete Guide (incl Hooks, React Router, Redux)",
@@ -82,5 +84,31 @@ export const Formations = [
     Tags: ["ReactJS", "NodeJS", "Express", "MongoDB"],
     openSession: true,
     disc: "Learn how to Build and deploy a social network with Node.js, Express, React, Redux & MongoDB.",
+  },
+  {
+    id: 6,
+    status: true,
+    category: "Mobile",
+    name: "Flutter & Dart - The Complete Guide [2021 Edition]",
+    banner: img7,
+    duration: 47,
+    price: 229,
+    students: 10,
+    Tags: ["Flutter", "Dart", "IOS", "Android"],
+    openSession: true,
+    disc: "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps",
+  },
+  {
+    id: 7,
+    status: true,
+    category: "Mobile",
+    name: "Android Java Masterclass - Become an App Developer",
+    banner: img8,
+    duration: 47,
+    price: 229,
+    students: 10,
+    Tags: ["Java", "Android Studio", "Android"],
+    openSession: true,
+    disc: "Improve your career options by learning Android app Development. Master Android Studio and build your first app today",
   },
 ];

@@ -5,7 +5,7 @@ export default function Hero() {
     <div>
       <Header />
 
-      <div class='hero py-10 bg-base-200'>
+      <div class='hero py-10'>
         <div class='flex-col hero-content lg:flex-row-reverse'>
           <img
             src='https://www.betterteam.com/images/web-developer-job-description-6494x4331-2020128.jpeg?crop=21:16,smart&width=420&dpr=2'

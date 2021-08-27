@@ -1,38 +1,39 @@
-import Link from "next/link";
-import CategoriesMenu from "./CategoriesMenu";
+import ActiveLink from "./ActiveLink";
+const items = [
+  {
+    name: "Home",
+    to: "/",
+  },
+  {
+    name: "Formations",
+    to: "/Formations",
+  },
+  {
+    name: "Certifications",
+    to: "/Certifications",
+  },
+  {
+    name: "Contact",
+    to: "/Contact",
+  },
+];
 
-const HeaderItems = () => {
-  return (
-    <div className='flex items-center'>
-      <div
-        className='text-gray-800 flex items-center transition-colors ease-in duration-300
-               tracking-wide  mx-3  hover:text-primary   cursor-pointer font-Noto uppercase text-sm font-semibold'>
-        <Link href='/'>Acceuil</Link>
-      </div>
-      {/* <DropDownMenu /> */}
-      {/* <CategoriesMenu /> */}
-      <div
-        className='text-gray-800 flex items-center transition-colors ease-in duration-300
-               tracking-wide  mx-3  hover:text-primary   cursor-pointer font-Noto  uppercase text-sm font-semibold'>
-        <Link href='/Formations'>Nos Formations</Link>
-      </div>
-      <div
-        className='text-gray-800 flex items-center transition-colors ease-in duration-300
-               tracking-wide  mx-3  hover:text-primary   cursor-pointer font-Noto  uppercase text-sm font-semibold'>
-        <Link href='/Certificats'>Certifications</Link>
-      </div>
-      <div
-        className='text-gray-800 flex items-center transition-colors ease-in duration-300
-               tracking-wide  mx-3  hover:text-primary   cursor-pointer font-Noto  uppercase text-sm font-semibold'>
-        <Link href='/About'>Qui sommes-nous</Link>
-      </div>
-      <div
-        className='text-gray-800 flex items-center transition-colors ease-in duration-300
-               tracking-wide  mx-3  hover:text-primary   cursor-pointer font-Noto  uppercase text-sm font-semibold'>
-        <Link href='/Contact'>Contact</Link>
-      </div>
-    </div>
-  );
-};
+const HeaderItems = () => (
+  <nav className=''>
+    <ul className='flex py-2 text-gray-700 font-Noto font-medium '>
+      {items.map((item) => {
+        return (
+          <li key={item.name} className='mr-8'>
+            <ActiveLink
+              activeClassName='text-primary font-bold'
+              href={`${item.to}`}>
+              <a>{item.name}</a>
+            </ActiveLink>
+          </li>
+        );
+      })}
+    </ul>
+  </nav>
+);
 
 export default HeaderItems;

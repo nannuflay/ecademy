@@ -13,7 +13,7 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          /* your theme name */ primary: "#a991f7" /* Primary color */,
+          /* your theme name */ primary: "#0d8b82" /* Primary color */,
           "primary-focus": "#8462f4" /* Primary color - focused */,
           "primary-content":
             "#ffffff" /* Foreground content color to use on primary color */,
